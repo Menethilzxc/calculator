@@ -1,0 +1,125 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(90, 119, 113);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.calc-main {
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 500px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background: rgb(133, 189, 107);
+}
+
+.current-value {
+	width: 260px;
+	height: 50px;
+	border-radius: 12px;
+	border: none;
+	background: white;
+	color: rgb(26, 68, 184);
+	font-size: 28px;
+	text-align: right;
+	margin-bottom: 30px;
+	margin-top: 80px;
+	padding-top: 9px;
+	padding-right: 9px;
+}
+
+.result {
+	width: 260px;
+	height: 50px;
+	border-radius: 12px;
+	border: none;
+	background: white;
+	color: red;
+	font-size: 28px;
+	text-align: right;
+	margin-bottom: 30px;
+	margin-top: 80px;
+	padding-top: 9px;
+	padding-right: 9px;
+}
+
+.calc-buttons_expression {
+	margin-bottom: 30px;
+}
+
+.calc-buttons_expression-mark {
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 35px;
+	font-style: italic;
+}
+
+.calc-buttons_expression-mark:hover {
+	background: rgb(45, 179, 219);
+}
+
+.calc-buttons_expression-mark:last-child {
+	margin-right: 0px;
+}
+
+.calc-buttons_number {
+	width: 200px;
+	height: 260px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.calc-buttons_number-figure {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	margin-right: 10px;
+
+	font-size: 25px;
+}
+
+.calc-buttons_number-figure:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.calc-buttons_number-figure:last-child {
+	margin-right: 0px;
+}
+
+.calc-buttons_number-figure:hover {
+	background: rgb(45, 179, 219);
+}
+
+/* стиль для заблокированной кнопки, чтобы не вызывало подозрений и интуитивно было понятно*/
+button[disabled] {
+	opacity: 1;
+	cursor: pointer;
+	color: black;
+	background: white;
+}
