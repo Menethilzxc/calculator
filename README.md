@@ -6,8 +6,6 @@
 - Очистка текущего ввода
 - Поддержка десятичных числел
 
-## Превью
-
 ## Запуск
 - git clone https://github.com/Menethilzxc/calculator.git
 - cd calculator
