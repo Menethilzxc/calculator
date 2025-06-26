@@ -9,7 +9,7 @@
 ## Превью
 
 ## Запуск
-- git clone -b develop https://github.com/Menethilzxc/calculator.git
+- git clone https://github.com/Menethilzxc/calculator.git
 - cd calculator
 - npm install
 - npm run dev
